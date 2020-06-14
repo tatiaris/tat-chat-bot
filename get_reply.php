@@ -59,8 +59,8 @@ function get_analyzed_answer($json){
 }
 
 function get_reply($query){
-    $appId = "bdb0eb00-aa00-42e2-9d3c-6351062ba45a";
-    $endpointKey = "6534b3875a1b434a9b5acb48c5d091bc";
+    $appId = "your app id";
+    $endpointKey = "your endpoint key";
     $endpoint = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/";
     $json = AnalyzeText($endpoint, $appId, $endpointKey, $query);
     $data = json_encode(json_decode($json), JSON_PRETTY_PRINT);
